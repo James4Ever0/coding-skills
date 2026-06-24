@@ -1,0 +1,77 @@
+---
+_harness_template: "AGENTS.md"
+_harness_version: "1.0.0"
+---
+
+# AGENTS.md — Agent Entry Point
+
+> **Purpose**: a short, stable map for any coding agent entering this repository. Keep it under 150 lines.
+
+## 1. Project at a Glance
+
+- **Name**: {{PROJECT_NAME}}
+- **Language / stack**: {{STACK}}
+- **Main entry point**: {{ENTRY_POINT}}
+- **Test command**: {{TEST_COMMAND}}
+- **Dev command**: {{DEV_COMMAND}}
+
+## 2. Roles
+
+### Agent owns
+
+- Implementing scoped changes.
+- Writing tests and running the test suite.
+- Updating docs and plans.
+- Keeping the working tree clean.
+
+### Human owns
+
+- Production deploys.
+- Architecture changes that affect multiple domains.
+- Security and secret management.
+- Scope clarification when requirements conflict.
+
+## 3. Where Knowledge Lives
+
+| File/Folder | What it contains |
+|-------------|------------------|
+| `CLAUDE.md` | Agent behavior and session routine |
+| `CODING_RULES.md` | Universal coding standards |
+| `docs/spec/` | Product and technical specs |
+| `docs/plans/` | Active execution plans |
+| `docs/decisions/` | Architecture decision records |
+| `.tips_and_tricks/` | Project-specific workflows and debug notes |
+| `.claude/memory/` | Persistent session memory |
+| `.claude/plans/` | Session-scoped plans and continuation notes |
+| `scripts/` | Install, build, test, run scripts |
+
+## 4. Quick Start
+
+```bash
+# Install dependencies
+scripts/install.sh
+
+# Run tests
+scripts/test.sh
+
+# Start development
+scripts/dev.sh
+```
+
+## 5. Prohibited Actions
+
+- Do not deploy to production.
+- Do not change security settings unless explicitly asked.
+- Do not delete files without permission.
+- Do not commit secrets or local-only config.
+
+## 6. When to Escalate
+
+- Scope is unclear.
+- A change affects public API or product behavior.
+- CI fails after 3 attempts.
+- A decision requires human judgment.
+
+---
+
+*Keep this file current. If it grows, move detailed content to `docs/`.*
