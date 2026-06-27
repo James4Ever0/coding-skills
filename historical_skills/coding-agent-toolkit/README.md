@@ -48,6 +48,12 @@ A reusable set of Claude Code skills distilled from coding best practices, harne
 | `/docs-and-tips` | Write docs and capture workflow/debug tricks in `.tips_and_tricks/`. |
 | `/repo-knowledge-map` | Keep `AGENTS.md` short and `docs/` as the system of record. |
 
+### Prototyping & creation
+
+| Skill | Purpose |
+|-------|---------|
+| `/coding-skill-prototyping` | 5-phase pipeline: Plan → Prototype → Test → Convert → Finalize new skills. |
+
 ### Agentic workflows
 
 | Skill | Purpose |

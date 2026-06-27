@@ -138,6 +138,7 @@ Or invoke a specific skill:
 | `/repo-knowledge-map` | Keep `AGENTS.md` short and `docs/` as the system of record. |
 | `/agent-orchestration` | Design a multi-agent plan for pure agentic coding. |
 | `/generator-evaluator-loop` | Separate generation from skeptical evaluation. |
+| `/coding-skill-prototyping` | 5-phase pipeline: Plan → Prototype → Test → Convert → Finalize. |
 
 ---
 

@@ -22,6 +22,9 @@ The new subfolders below supplement these with deeper, domain-specific rules:
 | `web/CODING_RULES.md` | JavaScript / TypeScript / frontend rules. |
 | `docker_and_devops/CODING_RULES.md` | Docker, compose, CI/CD, remote jobs. |
 | `api_and_docs/CODING_RULES.md` | OpenAPI-first APIs and LLM-friendly docs. |
+| `prototyping/CODING_RULES.md` | Prototyping-specific coding rules (template-based, language-agnostic). |
+| `prototyping/WORKFLOW.md` | Prototyping 5-phase workflow (plan, prototype, test, convert, finalize). |
+| `prototyping/MEMORY_SETUP.md` | Memory file conventions for prototyping sessions. |
 
 ## How to use
 

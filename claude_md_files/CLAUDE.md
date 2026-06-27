@@ -141,6 +141,7 @@ These files are the system of record for how this codebase should be worked on.
 | `scripts/` | Install, build, test, and launch scripts |
 | `spikes/` | Time-boxed experiments and verification code |
 | `logs/` | Rotating log output (never commit) |
+| `prototyping/` | Skill prototyping template workspace (start with `PROTOTYPING_HOWTO.md`, see `claude_md_files/prototyping/`) |
 
 ---
 

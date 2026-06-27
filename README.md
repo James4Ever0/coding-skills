@@ -26,6 +26,16 @@ coding-skills-github/
     ├── per-language/*.md              # python, typescript, javascript, go, rust, java, bash, sql, cpp, docker
     ├── per-project-type/*.md          # web-app, api-service, cli-tool, data-pipeline, cross-platform-native
     └── <domain>/CODING_RULES.md       # universal, python, web, docker_and_devops, api_and_docs, agentic_workflows
+├── prototyping/          # skill prototyping workspace (template)
+│   ├── README.md                       # workspace overview
+│   ├── PROTOTYPING_HOWTO.md            # how to use as a template
+│   ├── MILESTONE.md                    # milestone tracker
+│   ├── docs/                           # milestone schema, conversion map, testing strategy
+│   │   └── references/                 # topic-based reference files
+│   ├── python/                         # Python prototype template
+│   ├── bash/                           # Bash prototype template
+│   ├── golang/                         # Go conversion target
+│   └── rust/                           # Rust conversion target
 ```
 
 ## The two skill sets
@@ -60,3 +70,16 @@ Restart Claude Code to load skills, then verify with `/skills` or invoke one (`/
 - Skills are single Markdown files with YAML frontmatter (`name`, `description`, `kind`, `user-invocable`); keep one workflow per skill, under ~300 lines.
 - No machine-specific absolute paths or secrets in any file — ask for IPs/ports/keys at runtime or read from env.
 - Keep `AGENTS.md` a short map; put depth in `docs/` and cross-link rather than duplicate.
+
+## Prototyping
+
+`prototyping/` — template workspace for creating new skills (Plan → Prototype → Test → Convert → Finalize). Key entry points:
+
+- `prototyping/PROTOTYPING_HOWTO.md` — how to use this folder as a template
+- `prototyping/README.md` — workspace overview
+- `prototyping/MILESTONE.md` — status tracker
+- `claude_md_files/prototyping/CODING_RULES.md` — coding rules
+- `claude_md_files/prototyping/WORKFLOW.md` — detailed 5-phase workflow
+- `claude_md_files/prototyping/MEMORY_SETUP.md` — memory file conventions
+- `historical_skills/coding-skill-prototyping/SKILL.md` — atomic skill
+- `historical_skills/coding-agent-toolkit/skills/coding-skill-prototyping.md` — toolkit skill
