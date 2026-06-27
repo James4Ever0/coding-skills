@@ -141,6 +141,17 @@ Always use isolated environments (venv, nvm, conda, rustup toolchain) and activa
 - Record decisions, risks, and unknowns in versioned markdown.
 - End long sessions with a continuation note if work is not finished.
 
+## 17. Refactoring Discipline
+
+When restructuring existing code, move it — don't rewrite it from memory:
+
+- **Copy + rename first**: copy the script to its new home and rename it; keep the original until the new path is imported and verified (see §15 and the `/naive-forking` skill).
+- **Move via file copy, don't re-dump**: refactor by relocating existing files, not by re-emitting large code blocks from scratch when an equivalent file already exists.
+- **Extract callable units**: pull logic into importable functions/modules so other code can call it, instead of leaving it inline in one script.
+- **Keep the entry point thin**: the main script should parse args, wire dependencies, and delegate to modules — minimal logic of its own.
+- **Rearrange folders by concern**: group the extracted modules so one concern lives per file/directory (ties to §1).
+- **Leave a structure overview**: after the refactor, write or refresh a short file-structure overview (in `AGENTS.md` or `docs/`) so future development and navigation are easy — `/repo-knowledge-map` can generate it.
+
 ---
 
 *Language-specific rules live in `claude_md_files/per-language/`.*

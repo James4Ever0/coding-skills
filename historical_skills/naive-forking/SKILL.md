@@ -35,3 +35,9 @@ Create a safe copy of the current codebase so you can experiment without breakin
 - Never copy `.env`, `.claude/settings.local.json`, or other local-only files.
 - Use explicit file lists or invert filters with `grep -v`; avoid blind `cp -r` of the whole directory.
 - Ask the user before copying large binary assets.
+
+## When forking for a refactor
+
+- Extract reusable code into importable, callable modules; keep the main script thin (delegate, don't inline).
+- Move code via file copy; avoid re-dumping large blocks that already exist as files.
+- Leave a file-structure overview in the new folder (`AGENTS.md`/`NOTES.md`) for navigation.
